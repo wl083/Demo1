@@ -40,4 +40,30 @@
         <attr name="scrollDuration" format="integer|reference" />
         <attr name="isAutoPlay" format="boolean|reference"/>
     </declare-styleable>
+
+
+
+    <declare-styleable name="AbsRoundImageView">
+        <attr name="riv_borderWidth" format="dimension|reference"/>
+        <attr name="riv_borderColor" format="color|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="RoundImageView">
+        <attr name="riv_leftTopRadius" format="dimension|reference"/>
+        <attr name="riv_rightTopRadius" format="dimension|reference"/>
+        <attr name="riv_rightBottomRadius" format="dimension|reference"/>
+        <attr name="riv_leftBottomRadius" format="dimension|reference"/>
+    </declare-styleable>
+
+
+
+
+    <declare-styleable name="BorderTextView">
+        <attr name="strokeWidth" format="dimension|reference"/>
+        <attr name="cornerRadius" format="dimension|reference"/>
+        <attr name="strokeColor" format="color|reference"/>
+        <attr name="followTextColor" format="boolean"/>
+
+        <attr name="textColor" format="string|reference" />
+    </declare-styleable>
 </resources>

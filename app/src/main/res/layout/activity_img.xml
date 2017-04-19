@@ -29,6 +29,36 @@
             app:civ_border_color="@color/dark"/>
 
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10dp">
+            <customview.tv.BorderTextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="身份验证"
+                android:textColor="#f00"
+                app:strokeColor="#edd660"
+                app:cornerRadius="10dp"
+                app:followTextColor="false"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_centerVertical="true"
+                />
+            <customview.imgs.two.RoundImageView
+                android:id="@+id/round_image_xutils"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/hugh"
+                android:scaleType="centerCrop"
+                app:riv_borderWidth="2dp"
+                app:riv_borderColor="#8c9eff"
+                app:riv_rightTopRadius="30dp"
+                app:riv_leftBottomRadius="30dp"
+                android:layout_centerHorizontal="true"
+                />
+        </RelativeLayout>
+
 
         <com.l.example.demo1.img.banners1.BannerLayout
             android:id="@+id/banner"
@@ -78,6 +108,8 @@
             app:unSelectedIndicatorColor="#99ffffff"
             app:unSelectedIndicatorHeight="6dp"
             app:unSelectedIndicatorWidth="6dp"/>
+
+
     </LinearLayout>
 
 </ScrollView>

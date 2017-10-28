@@ -7,7 +7,7 @@ import android.widget.TextView;
 import com.l.example.adapters.MyAdapterWithCommAdapter;
 import com.l.example.adapters.MyAdapterWithCommViewHolder;
 import com.l.example.beans.Bean;
-import com.l.example.demo1.BaseActivity;
+import base.BaseActivity;
 import com.l.example.demo1.R;
 
 import java.util.ArrayList;

@@ -1,6 +1,5 @@
 package com.l.example.demo1;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -8,6 +7,7 @@ import android.widget.Toast;
 
 import com.l.example.adapters_activity.AdaptersActivity;
 
+import base.BaseActivity;
 import butterknife.OnClick;
 
 /**
@@ -30,12 +30,12 @@ public class MainActivity extends BaseActivity {
     }
 
 
-    @OnClick({R.id.btn1, R.id.tv1})
+    @OnClick({R.id.btn_adapter, R.id.tv1})
     public void onclick(View view) {
         switch (view.getId()) {
-            case R.id.btn1:
+            case R.id.btn_adapter:
                 Log.i(TAG, "onclick: ");
-                startActivity(new Intent(MainActivity.this, AdaptersActivity.class));
+                startActivity(AdaptersActivity.class);
                 break;
             case R.id.tv1:
                 Toast.makeText(MainActivity.this, "666", Toast.LENGTH_SHORT).show();
@@ -43,13 +43,10 @@ public class MainActivity extends BaseActivity {
             /**
              * 包括自定义view
              */
-            case R.id.btn2:
-                startActivity(new Intent(MainActivity.this, CustomViewActivity.class));
+            case R.id.btn_customview:
+                startActivity(CustomViewActivity.class);
                 break;
         }
     }
-
-
-//    @OnClick(R.id.btn1)
 
 }

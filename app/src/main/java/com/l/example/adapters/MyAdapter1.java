@@ -3,6 +3,7 @@ package com.l.example.adapters;
 import java.util.List;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.View;
 import android.widget.Toast;
 
@@ -35,6 +36,7 @@ public class MyAdapter1 extends CommonAdapter<Bean1>{
 			@Override
 			public void onClick(View v) {
 				Toast.makeText(mContext,"item" + bean.countactPerson ,Toast.LENGTH_SHORT).show();
+				Intent intent = new Intent();
 			}
 		});
 		

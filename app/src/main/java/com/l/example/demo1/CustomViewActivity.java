@@ -3,11 +3,12 @@ package com.l.example.demo1;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.l.example.demo1.img.ImgActivity;
 
+import base.BaseActivity;
+import customview.EmptyActivity;
 import customview.GuaGuaKaActivity;
 
 /**
@@ -15,7 +16,7 @@ import customview.GuaGuaKaActivity;
  *
  * 功能：刮刮卡、圆形图片；
  */
-public class CustomViewActivity extends AppCompatActivity{
+public class CustomViewActivity extends BaseActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,14 +29,20 @@ public class CustomViewActivity extends AppCompatActivity{
             /**
              * 呱呱卡效果
              */
-            case R.id.btn1:
-                startActivity(new Intent(CustomViewActivity.this, GuaGuaKaActivity.class));
+            case R.id.btn_adapter:
+                startActivity(GuaGuaKaActivity.class);
                 break;
             /**
              * 圆形图片效果
              */
-            case R.id.btn2:
-                startActivity(new Intent(CustomViewActivity.this, ImgActivity.class));
+            case R.id.btn_customview:
+                startActivity(ImgActivity.class);
+                break;
+
+            case R.id.btn_empty_view:
+//                startActivity(new Intent(CustomViewActivity.this, EmptyActivity.class));
+//                startActivity(EmptyActivity.class);
+                startActivity(EmptyActivity.class);
                 break;
         }
     }

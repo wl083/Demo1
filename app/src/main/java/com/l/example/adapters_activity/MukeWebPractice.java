@@ -1,17 +1,13 @@
 package com.l.example.adapters_activity;
 
-import android.Manifest;
-import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.content.ContextCompat;
-import android.view.View;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import com.l.example.adapters.MyAdapter1;
 import com.l.example.beans.Bean1;
-import com.l.example.demo1.BaseActivity;
+import base.BaseActivity;
 import com.l.example.demo1.R;
 
 import java.util.ArrayList;

@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
 
-import com.l.example.demo1.BaseActivity;
+import base.BaseActivity;
 import com.l.example.demo1.R;
 
 import butterknife.OnClick;
@@ -25,13 +25,13 @@ public class AdaptersActivity extends BaseActivity{
     }
 
 
-    @OnClick({R.id.btn1,R.id.btn2,R.id.btn3,R.id.btn4})
+    @OnClick({R.id.btn_adapter,R.id.btn_customview,R.id.btn3,R.id.btn4})
     public void onclick(View view) {
         switch (view.getId()){
-            case R.id.btn1:
+            case R.id.btn_adapter:
                 startActivity(new Intent(AdaptersActivity.this,MukeWebAdapterActivity.class));
                 break;
-            case R.id.btn2:
+            case R.id.btn_customview:
                 startActivity(new Intent(this,MukeWebPractice.class));
                 break;
             case R.id.btn3:

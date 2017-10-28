@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.l.example.demo1">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -16,16 +16,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.l.example.adapters_activity.AdaptersActivity"></activity>
-        <activity android:name="com.l.example.adapters_activity.MukeWebAdapterActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            ></activity>
-        <activity android:name="com.l.example.adapters_activity.MukeWebPractice"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            ></activity>
-        <activity android:name=".CustomViewActivity"/>
-        <activity android:name="customview.GuaGuaKaActivity"/>
-        <activity android:name=".img.ImgActivity"/>
+        <activity android:name="com.l.example.adapters_activity.AdaptersActivity"/>
+        <activity
+            android:name="com.l.example.adapters_activity.MukeWebAdapterActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name="com.l.example.adapters_activity.MukeWebPractice"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name=".CustomViewActivity" />
+        <activity android:name="customview.GuaGuaKaActivity" />
+        <activity android:name=".img.ImgActivity" />
+        <activity android:name="customview.EmptyActivity"/>
     </application>
 
 </manifest>

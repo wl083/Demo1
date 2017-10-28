@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <customview.utils.EmptyView
+        android:id="@+id/view_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:rootViewGravity="1"
+        app:strEmptyDescription="没数据没数据没数据"
+        app:strErrorDescription="请求失败失败失败"
+        app:strNoNetworkDescription="网络错误错误"
+        app:rootViewBackgroundColor="#ffffff"
+        app:strTextColor="#dec85e"
+        app:imgEmptyDrawable="@mipmap/img_empty"
+        app:imgNoNetwork="@mipmap/img_no_network"
+        app:strTextSize="@dimen/dimen_16sp"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <Button
+            android:id="@+id/btn_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="默认"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/btn_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="空"
+            android:layout_weight="1"
+            />
+        <!--<Button-->
+        <!--android:id="@+id/btn_empty_no_image"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="无图"-->
+        <!--android:layout_weight="1"-->
+        <!--/>-->
+
+        <Button
+            android:id="@+id/btn_error_common"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="通错"
+            android:layout_weight="1"
+            />
+        <Button
+            android:id="@+id/btn_error_net_work"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="网错"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+</RelativeLayout>

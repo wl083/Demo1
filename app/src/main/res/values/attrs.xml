@@ -66,4 +66,22 @@
 
         <attr name="textColor" format="string|reference" />
     </declare-styleable>
+
+    <!-- layout_emptyview 自定义属性-->
+    <declare-styleable name="EmptyView">
+        <attr name="strTextContent" format="string|reference"/>
+        <attr name="rootViewGravity" format="integer|reference"/>
+
+        <attr name="rootViewBackgroundColor" format="color|reference"/>
+        <attr name="strTextColor" format="color|reference"/>
+        <attr name="strTextSize" format="float|reference"/>
+        <attr name="imgEmptyDrawable" format="reference"/>
+        <attr name="strEmptyDescription" format="string|reference"/>
+
+        <attr name="imgErrorDrawable" format="reference"/>
+        <attr name="strErrorDescription" format="string|reference"/>
+
+        <attr name="imgNoNetwork" format="reference"/>
+        <attr name="strNoNetworkDescription" format="string|reference"/>
+    </declare-styleable>
 </resources>

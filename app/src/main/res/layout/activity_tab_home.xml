@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <FrameLayout
+        android:id="@+id/frglayout_tab_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RadioGroup
+        android:id="@+id/rg_tab_homea"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/dimen_5dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        >
+
+        <RadioButton
+            android:id="@+id/rb1_tab_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/tab_select_home"
+            android:text="主页"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:button="@null"
+            android:textColor="@drawable/tab_selet_text_color"
+            />
+
+        <View
+            android:layout_width="@dimen/dimen_1dp"
+            android:layout_height="match_parent"
+            android:background="#afacac"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_marginBottom="@dimen/dimen_5dp"
+            />
+
+        <RadioButton
+            android:id="@+id/rb2_tab_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/tab_select_home"
+            android:text="其他"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:button="@null"
+            android:textColor="@drawable/tab_selet_text_color"
+            />
+
+    </RadioGroup>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/rg_tab_homea"
+        android:background="@color/color_333333" />
+
+</RelativeLayout>
